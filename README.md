@@ -16,10 +16,10 @@ Pipeline reprodutível para controle de qualidade, alinhamento, chamada de varia
 - vt – decomposição e normalização de variantes
 - Ensembl VEP – predição de impacto funcional
 
-**Análise de dados**
+**Análise de dados** <br>
 Python (Em andamento)
 
-**Infraestrutura**
+**Infraestrutura** <br>
 Docker + Miniconda para portabilidade e consistência de versões
 
 🧬 **Referência Genômica**
