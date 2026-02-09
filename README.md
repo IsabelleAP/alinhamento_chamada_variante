@@ -28,23 +28,15 @@ Docker + Miniconda para portabilidade e consistência de versões
 - O FASTA foi indexado com: samtools faidx e bwa index
 
 📊 **Visão Geral do Workflow**
-FASTQ
-  ↓
-Quality Control (Fastp)
-  ↓
-Subamostragem de reads
-  ↓
-Alinhamento (BWA-MEM)
-  ↓
-BAM ordenado + indexado (Samtools)
-  ↓
-Variant Calling (Bcftools)
-  ↓
-Normalização (vt)
-  ↓
-Anotação clínica (ClinVar)
-  ↓
-Anotação funcional (VEP)
-  ↓
-TSV para análises dos dados
-ustomizada. O VEP permitiu estimar o impacto molecular das variantes, identificando genes e transcritos afetados e classificando consequências como alterações sinônimas, missense, entre outras. O resultado foi exportado em formato tabular (TSV), facilitando integrações futuras com ferramentas de análise de dados.
+```mermaid
+graph TD
+    A[FASTQ] --> B(Quality Control - Fastp)
+    B --> C(Subamostragem de reads)
+    C --> D(Alinhamento - BWA-MEM)
+    D --> E(BAM ordenado + indexado - Samtools)
+    E --> F(Variant Calling - Bcftools)
+    F --> G(Normalização - vt)
+    G --> H(Anotação clínica - ClinVar)
+    H --> I(Anotação funcional - VEP)
+    I --> J[TSV para análises dos dados]
+```
