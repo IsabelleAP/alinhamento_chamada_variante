@@ -36,11 +36,11 @@ Nenhuma variante foi classificada nas categorias HIGH ou MODERATE, indicando aus
 A comparação com o banco ClinVar mostrou que a maioria das variantes não possui registro prévio. 
 Entre as variantes anotadas, predominaram classificações benignas ou provavelmente benignas, com poucos registros de significado clínico incerto:
 
-Benign                                            24
-Likely_benign                                     10
-Uncertain_significance                            10
-Benign/Likely_benign                               2
-Conflicting_classifications_of_pathogenicity       1
+Benign                                            24 <br>
+Likely_benign                                     10 <br>
+Uncertain_significance                            10 <br>
+Benign/Likely_benign                               2 <br>
+Conflicting_classifications_of_pathogenicity       1 <br>
 
 
 📊 **Visão Geral do Workflow**
