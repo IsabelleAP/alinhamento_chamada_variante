@@ -27,20 +27,26 @@ Docker + Miniconda para portabilidade e consistência de versões
 - Para fins didáticos e otimização de recursos, foi utilizado apenas o cromossomo 20
 - O FASTA foi indexado com: samtools faidx e bwa index
 
-**Interpretação dos resultados**
-As variantes identificadas concentram-se predominantemente em regiões não codificantes do genoma, não sendo esperado, portanto, impacto direto sobre a sequência de proteínas.
-Foram detectadas 3.133 variantes no cromossomo 20, das quais 47 apresentam registro no ClinVar, enquanto a maioria não possui anotação clínica conhecida.
-De acordo com a classificação do VEP, todas as variantes foram categorizadas com impacto MODIFIER, consistente com a localização majoritária em regiões intergênicas ou sem efeito funcional previsto.
-Nenhuma variante foi classificada nas categorias HIGH ou MODERATE, indicando ausência de alterações com potencial efeito direto sobre produtos gênicos neste conjunto de dados.
+**Interpretação dos resultados** <br>
+Foram analisadas 3.133 variantes genômicas localizadas no cromossomo 20. As variantes foram anotadas utilizando o Ensembl Variant Effect Predictor (VEP) e posteriormente analisadas em Python.
 
-A comparação com o banco ClinVar mostrou que a maioria das variantes não possui registro prévio. 
-Entre as variantes anotadas, predominaram classificações benignas ou provavelmente benignas, com poucos registros de significado clínico incerto:
+Registro clínico das variantes
+* A maioria das variantes não possui registro clínico conhecido.
+* Variantes com registro no ClinVar: 47
+* Variantes sem registro clínico: 3086
+
+Entre as variantes registradas no ClinVar, a maioria apresenta classificação benigna ou provavelmente benigna: <br>
 
 Benign:                                            24 <br>
 Likely_benign:                                     10 <br>
 Uncertain_significance:                            10 <br>
 Benign/Likely_benign:                               2 <br>
 Conflicting_classifications_of_pathogenicity:       1 <br>
+
+
+Todas as variantes foram classificadas pelo VEP com IMPACT = MODIFIER, indicando que elas provavelmente estão em regiões não codificantes ou possuem impacto funcional baixo ou desconhecido. Nenhuma variante com impacto HIGH ou MODERATE foi identificada.
+
+A análise da posição genômica mostrou que as variantes estão distribuídas ao longo de todo o cromossomo 20, com uma região de maior concentração próxima a 30 Mb. Essa distribuição pode refletir regiões com maior densidade de variação ou maior cobertura de sequenciamento.
 
 
 📊 **Visão Geral do Workflow**
